@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mdo", "mdo\mdo.csproj", "{47016C54-EA0E-4DDD-8073-AA9C01BE68F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mdo-test", "mdo-test\mdo-test.csproj", "{53DBEFA1-2CB8-4E98-9B94-F24D5E72193F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{47016C54-EA0E-4DDD-8073-AA9C01BE68F2} = {47016C54-EA0E-4DDD-8073-AA9C01BE68F2}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mdo-x", "mdo-x\mdo-x.csproj", "{E4E96428-AF15-4125-9142-609B22627860}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47016C54-EA0E-4DDD-8073-AA9C01BE68F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47016C54-EA0E-4DDD-8073-AA9C01BE68F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47016C54-EA0E-4DDD-8073-AA9C01BE68F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47016C54-EA0E-4DDD-8073-AA9C01BE68F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53DBEFA1-2CB8-4E98-9B94-F24D5E72193F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53DBEFA1-2CB8-4E98-9B94-F24D5E72193F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53DBEFA1-2CB8-4E98-9B94-F24D5E72193F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53DBEFA1-2CB8-4E98-9B94-F24D5E72193F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4E96428-AF15-4125-9142-609B22627860}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4E96428-AF15-4125-9142-609B22627860}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4E96428-AF15-4125-9142-609B22627860}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4E96428-AF15-4125-9142-609B22627860}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

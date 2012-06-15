@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{53DBEFA1-2CB8-4E98-9B94-F24D5E72193F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gov.va.medora.mdo</RootNamespace>
+    <AssemblyName>mdo-test</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'LiveRun|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\LiveRun\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="antlr.runtime, Version=2.7.6.2, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>resources\lib\spring\lib\antlr.runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <HintPath>resources\lib\spring\lib\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.EntLib, Version=1.2.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>resources\lib\spring\bin\Common.Logging.EntLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net, Version=1.2.0.2, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>resources\lib\spring\bin\Common.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net129, Version=1.2.0.1, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>resources\lib\spring\bin\Common.Logging.Log4Net129.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.NLog, Version=1.2.0.2, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>resources\lib\spring\bin\Common.Logging.NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.2.9.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.DataAccess, Version=4.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="Spring.Aop, Version=1.1.2.20125, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL" />
+    <Reference Include="Spring.Core, Version=1.1.2.20125, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL" />
+    <Reference Include="Spring.Data, Version=1.1.2.20125, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL" />
+    <Reference Include="Spring.Data.NHibernate, Version=1.1.2.20125, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>resources\lib\spring\bin\Spring.Data.NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Data.NHibernate12, Version=1.1.2.20125, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>resources\lib\spring\bin\Spring.Data.NHibernate12.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Services, Version=1.1.2.20125, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL" />
+    <Reference Include="Spring.Testing.NUnit, Version=1.1.2.20125, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>resources\lib\spring\bin\Spring.Testing.NUnit.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Web, Version=1.1.2.20125, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL" />
+    <Reference Include="Spring.Web.Extensions, Version=1.1.2.20125, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>resources\lib\spring\bin\Spring.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TOReflection, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>resources\lib\toreflection\TOReflection.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\mdo\dao\ConfigFileDaoTest.cs" />
+    <Compile Include="src\mdo\dao\hl7\rxRefill\RxProfileDecoderTest.cs" />
+    <Compile Include="src\mdo\dao\hl7\rxRefill\RxRefillDecoderTest.cs" />
+    <Compile Include="src\mdo\dao\MockSetups.cs" />
+    <Compile Include="src\mdo\dao\oracle\mhv\sm\AddresseeDaoTest.cs" />
+    <Compile Include="src\mdo\dao\oracle\mhv\sm\FolderDaoTest.cs" />
+    <Compile Include="src\mdo\dao\oracle\mhv\sm\SecureMessageDaoTest.cs" />
+    <Compile Include="src\mdo\dao\oracle\mhv\sm\UserDaoTest.cs" />
+    <Compile Include="src\mdo\dao\sql\cdw\CdwPharmacyDaoTest.cs" />
+    <Compile Include="src\mdo\dao\vista\MockApp.cs" />
+    <Compile Include="src\mdo\dao\vista\VistaDateTimeIteratorTest.cs" />
+    <Compile Include="src\mdo\dao\vista\VistaSetups.cs" />
+    <Compile Include="src\mdo\dao\vista\VistaSocSecNumTest.cs" />
+    <Compile Include="src\mdo\dao\vista\VistaUtilsTest.cs" />
+    <Compile Include="src\mdo\domain\ccr\CCRHelperTest.cs" />
+    <Compile Include="src\mdo\MockDataReader.cs" />
+    <Compile Include="src\mdo\DemographicSetTest.cs" />
+    <Compile Include="src\mdo\SocSecNumTest.cs" />
+    <Compile Include="src\mdo\TestUser.cs" />
+    <Compile Include="src\mdo\utils\DateUtilsTest.cs" />
+    <Compile Include="src\mdo\utils\FileIOUtilsTest.cs" />
+    <Compile Include="src\mdo\utils\ResourceUtilsTest.cs" />
+    <Compile Include="src\mdo\utils\SSTCryptographerTest.cs" />
+    <Compile Include="src\mdo\utils\StringUtilsTest.cs" />
+    <Compile Include="src\mdo\IndexedHashtableTest.cs" />
+    <Compile Include="src\mdo\TeamTest.cs" />
+    <Compile Include="src\TestObjects.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mdo\mdo.csproj">
+      <Project>{47016C54-EA0E-4DDD-8073-AA9C01BE68F2}</Project>
+      <Name>mdo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\conf\app.conf" />
+    <None Include="resources\lib\nunit\clr.bat" />
+    <None Include="resources\lib\nunit\mock-assembly.dll.config" />
+    <None Include="resources\lib\nunit\nunit-console.exe.config" />
+    <None Include="resources\lib\nunit\nunit-console.tests.dll.config" />
+    <None Include="resources\lib\nunit\nunit-gui.exe.config" />
+    <None Include="resources\lib\nunit\nunit.framework.tests.dll.config" />
+    <None Include="resources\lib\nunit\nunit.mocks.tests.dll.config" />
+    <None Include="resources\lib\nunit\nunit.uikit.tests.dll.config" />
+    <None Include="resources\lib\nunit\nunit.util.tests.dll.config" />
+    <None Include="resources\lib\nunit\NUnitTests.config" />
+    <None Include="resources\lib\nunit\NUnitTests.nunit" />
+    <None Include="resources\lib\toreflection\TOReflection.dll.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\lib\log4net\log4net.dll" />
+    <Content Include="resources\lib\log4net\log4net.pdb" />
+    <Content Include="resources\lib\log4net\log4net.xml" />
+    <Content Include="resources\lib\nunit\mock-assembly.dll" />
+    <Content Include="resources\lib\nunit\nonamespace-assembly.dll" />
+    <Content Include="resources\lib\nunit\notestfixtures-assembly.dll" />
+    <Content Include="resources\lib\nunit\nunit-console-runner.dll" />
+    <Content Include="resources\lib\nunit\nunit-console.exe" />
+    <Content Include="resources\lib\nunit\nunit-console.tests.dll" />
+    <Content Include="resources\lib\nunit\nunit-gui-runner.dll" />
+    <Content Include="resources\lib\nunit\nunit-gui.exe" />
+    <Content Include="resources\lib\nunit\nunit-gui.tests.dll" />
+    <Content Include="resources\lib\nunit\nunit-server.exe" />
+    <Content Include="resources\lib\nunit\nunit-test-server.dll" />
+    <Content Include="resources\lib\nunit\nunit.core.dll" />
+    <Content Include="resources\lib\nunit\nunit.core.extensions.dll" />
+    <Content Include="resources\lib\nunit\nunit.extensions.tests.dll" />
+    <Content Include="resources\lib\nunit\nunit.framework.dll" />
+    <Content Include="resources\lib\nunit\nunit.framework.tests.dll" />
+    <Content Include="resources\lib\nunit\nunit.mocks.dll" />
+    <Content Include="resources\lib\nunit\nunit.mocks.tests.dll" />
+    <Content Include="resources\lib\nunit\nunit.testutilities.dll" />
+    <Content Include="resources\lib\nunit\nunit.uikit.dll" />
+    <Content Include="resources\lib\nunit\nunit.uikit.tests.dll" />
+    <Content Include="resources\lib\nunit\nunit.util.dll" />
+    <Content Include="resources\lib\nunit\nunit.util.tests.dll" />
+    <Content Include="resources\lib\nunit\timing-tests.dll" />
+    <Content Include="resources\lib\spring\bin\antlr.runtime.dll" />
+    <Content Include="resources\lib\spring\bin\Common.Logging.dll" />
+    <Content Include="resources\lib\spring\bin\Spring.Aop.dll" />
+    <Content Include="resources\lib\spring\bin\Spring.Aop.pdb" />
+    <Content Include="resources\lib\spring\bin\Spring.Aop.xml" />
+    <Content Include="resources\lib\spring\bin\Spring.Core.dll" />
+    <Content Include="resources\lib\spring\bin\Spring.Core.pdb" />
+    <Content Include="resources\lib\spring\bin\Spring.Core.xml" />
+    <Content Include="resources\lib\spring\bin\Spring.Data.dll" />
+    <Content Include="resources\lib\spring\bin\Spring.Data.pdb" />
+    <Content Include="resources\lib\spring\bin\Spring.Data.xml" />
+    <Content Include="resources\lib\spring\bin\Spring.Services.dll" />
+    <Content Include="resources\lib\spring\bin\Spring.Services.pdb" />
+    <Content Include="resources\lib\spring\bin\Spring.Services.xml" />
+    <Content Include="resources\lib\spring\bin\Spring.Web.dll" />
+    <Content Include="resources\lib\spring\bin\Spring.Web.pdb" />
+    <Content Include="resources\lib\spring\bin\Spring.Web.xml" />
+    <Content Include="resources\lib\spring\lib\Common.Logging.Log4Net.dll" />
+    <Content Include="resources\lib\spring\lib\Common.Logging.Log4Net129.dll" />
+    <Content Include="resources\lib\toreflection\TOReflection.dll" />
+    <Content Include="resources\lib\toreflection\TOReflection.pdb" />
+    <Content Include="resources\xml\secret-testObjects.xml" />
+    <Content Include="resources\xml\testObjects.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\xml\VhaSites.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\mdo\dao\hl7\components\" />
+    <Folder Include="src\mdo\dao\hl7\mpi\messages\" />
+    <Folder Include="src\mdo\dao\hl7\mpi\segments\" />
+    <Folder Include="src\mdo\dao\hl7\segments\" />
+    <Folder Include="src\mdo\dao\soap\" />
+    <Folder Include="src\mdo\dao\sql\npt\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

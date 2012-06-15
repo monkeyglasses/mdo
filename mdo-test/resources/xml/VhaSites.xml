@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by Joe Gillon (Veterans Health Administration) -->
+<VhaVisnTable xmlns="http://med.va.gov/vistaweb/sitesTable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://med.va.gov/vistaweb/sitesTable VhaSites.xsd">
+	<VhaVisn name="VA VISN ONE" ID="1">
+    <VhaSite name="Site 1A" ID="101" moniker="S1A">
+      <DataSource modality="HIS" protocol="VISTA" source="127.0.0.1" status="active" />
+    </VhaSite>
+    <VhaSite name="Site 1B" ID="102" moniker="S1B">
+      <DataSource modality="HIS" protocol="VISTA" source="127.0.0.1" status="active" />
+    </VhaSite>
+  </VhaVisn>
+	<VhaVisn name="VA VISN TWO" ID="2">
+    <VhaSite name="Site 2A" ID="201" moniker="S2A">
+      <DataSource modality="HIS" protocol="VISTA" source="127.0.0.1" status="active" />
+    </VhaSite>
+    <VhaSite name="Site 2B" ID="202" moniker="S2B">
+      <DataSource modality="HIS" protocol="VISTA" source="127.0.0.1" status="active" />
+    </VhaSite>
+    <VhaSite name="Site 2C" ID="203" moniker="S2C">
+      <DataSource modality="HIS" protocol="VISTA" source="127.0.0.1" status="active" />
+    </VhaSite>
+  </VhaVisn>
+
+</VhaVisnTable>
