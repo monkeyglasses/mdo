@@ -8,8 +8,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mdo-test", "mdo-test\mdo-te
 		{47016C54-EA0E-4DDD-8073-AA9C01BE68F2} = {47016C54-EA0E-4DDD-8073-AA9C01BE68F2}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mdo-x", "mdo-x\mdo-x.csproj", "{E4E96428-AF15-4125-9142-609B22627860}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
