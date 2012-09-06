@@ -1,7 +1,22 @@
 .git*            export-ignore
 
+[attr]xml        text      -whitespace
+
 *                text=auto
+
+*.cs             text
+*.sln            text       eol=crlf  -whitespace
+*.txt            text
+*.wsdl           xml
+*.xml            xml
+*.xsd            xml
+*proj            xml        eol=crlf
 
 LICENSE          text
 NOTICE           text
 README           text
+
+Reference.map    xml
+Settings.settings xml
+app.conf         text
+app.config       xml
