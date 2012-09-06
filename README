@@ -1,0 +1,36 @@
+Medical Domain Objects (MDO)
+
+
+DESCRIPTION
+
+Medical Domain Web Services (MDWS) (pronounced meadows) is a suite of Service
+Oriented Architecture (SOA) middle-tier web services that exposes medical
+domain functionality, Medical Domain Objects (MDO). MDWS is equipped with the
+capacity to virtualize any legacy Veterans Health Information Systems and
+Technology Architecture (VistA) Remote Procedure Call (RPC) as a web service.
+
+A web service is an Application Programming Interface (API), which uses Simple
+Object Access Protocol (SOAP), the standardized protocol to communicate with
+subscribed client applications.
+
+The MDWS suite of web services provides the client application developer with
+common SOAP web services and documentation necessary to create client
+applications, which incorporate the organization’s business rules, as well as
+provide access to data from multiple VistA instances and other disparate data
+sources.
+
+
+LICENSING
+
+MDWS was developed by the US Department of Veterans Affairs, and therefore its
+source code is in the Public Domain. OSEHRA is hosting the project and has
+adopted the Apache 2.0 License for contributions made by community members.
+You will find the text of the Apache 2.0 License in the LICENSE File.
+
+
+FURTHER DETAILS
+
+For more information, please see:
+
+http://osehra.org
+http://www.va.gov/vdl/application.asp?appid=192
