@@ -1,0 +1,6 @@
+[submodule "mdo/resources/lib"]
+	path = mdo/resources/lib
+	url = ../mdo-deps
+[submodule "mdo-test/resources/lib"]
+	path = mdo-test/resources/lib
+	url = ../mdo-test-deps
